@@ -1,0 +1,641 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #74e7ff;
+  display: flex;
+  align-items: flex-end;
+}
+
+.building {
+  position: relative;
+}
+
+.first {
+  height: 53%;
+  width: 2.1%;
+  background-color: #9e6518;
+}
+
+.first .rooftop {
+  width: 100%;
+  height: 6%;
+  background-color: #814f15;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 33%);
+  position: relative;
+}
+
+.first .rooftop .inner {
+  background-color: #c78a21;
+  width: 72%;
+  height: 55%;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+
+.first .windows {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.first .windows .window {
+  background-color: #ba7b23;
+  position: absolute;
+  height: 4%;
+  width: 20%;
+}
+
+.first .window:nth-child(1) {
+  left: 16%;
+}
+
+.first .window:nth-child(2) {
+  left: 68%;
+  top: 3%;
+}
+
+.first .window:nth-child(3) {
+  top: 13%;
+  left: 8%;
+}
+
+.first .window:nth-child(4) {
+  top: 16.5%;
+  left: 46%;
+  height: 3.5%;
+}
+
+.first .window:nth-child(5) {
+  top: 19%;
+  left: 75%;
+}
+
+.first .window:nth-child(6) {
+  top: 33%;
+  left: 23%;
+}
+
+.second {
+  width: 7.6%;
+  height: 73%;
+  margin-left: -0.7%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.second .main-wrap {
+  background-color: #f6ebb1;
+  clip-path: polygon(23% 0, 87% 2%, 100% 100%, 0 100%);
+  height: 100%;
+  width: 60%;
+  position: relative;
+}
+
+.second .main-wrap .windows {
+  color: #e0a34c;
+  display: flex;
+  flex-direction: column;
+  gap: 9%;
+  position: absolute;
+  width: 16%;
+  height: 13%;
+}
+
+.second .main-wrap .windows .window {
+  height: 30%;
+  width: 100%;
+  background: currentColor;
+}
+
+.second .main-wrap .windows.main .window:nth-child(1) {
+  clip-path: polygon(0 0, 100% 13%, 100% 100%, 0 96%);
+}
+
+.second .main-wrap .windows.main .window:nth-child(2) {
+  clip-path: polygon(0 0, 100% 13%, 100% 87%, 0 100%);
+}
+
+.second .main-wrap .windows.main .window:nth-child(3) {
+  clip-path: polygon(0 0, 100% 13%, 100% 83%, 16% 100%);
+}
+
+.second .main-wrap .windows.secondary .window:nth-child(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+}
+
+.second .main-wrap .windows.secondary .window:nth-child(2) {
+  clip-path: polygon(0 6%, 92% 2%, 100% 100%, 25% 92%);
+}
+
+.second .main-wrap .windows.secondary .window:nth-child(3) {
+  clip-path: polygon(0 0, 100% 6%, 97% 100%, 0 100%);
+}
+
+.second .main-wrap .windows.main {
+  top: 3%;
+  left: 38%;
+}
+
+.second .main-wrap .windows.secondary {
+  top: 38%;
+  left: 56%;
+  transform: rotate(-1deg);
+}
+
+.second .secondary-wrap {
+  height: 100%;
+  width: 36%;
+  background-color: #e7bb5d;
+  clip-path: polygon(0% 1.8%, 84% 3.1%, 70% 100%, 0% 100%);
+  margin-left: -11%;
+  position: relative;
+}
+
+.second .tertiary-wrap {
+  height: 91%;
+  width: 41%;
+  background-color: #e7bb5d;
+  margin-left: -16%;
+  clip-path: polygon(0% 1.8%, 100% 3.9%, 100% 100%, 0% 100%);
+}
+
+.second > .windows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 45%;
+  height: 15%;
+  position: absolute;
+  right: 5%;
+  top: 13.5%;
+  column-gap: 38%;
+  row-gap: 7%;
+  transform: rotateX(19deg) rotateY(45deg);
+  transform-style: preserve-3d;
+}
+
+.second .windows .window {
+  background-color: #f9eba9;
+}
+
+.third {
+  display: flex;
+  height: 47%;
+  width: 4%;
+  margin-left: -1.6%;
+}
+
+.third .main-wrap {
+  background-color: #9f6519;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 33% 100%);
+  width: 40%;
+}
+
+.third .main-wrap .windows {
+  color: #c07f25;
+  display: flex;
+  height: 3%;
+  width: 59%;
+  gap: 28%;
+}
+
+.third .main-wrap .divider {
+  height: 0.5%;
+  background-color: #c07f25;
+}
+
+.third .main-wrap .divider.top {
+  position: relative;
+  top: 0.9%;
+  height: 0.3%;
+}
+
+.third .main-wrap .divider.bottom {
+  position: relative;
+  top: 2%;
+}
+
+.third .main-wrap .windows.top {
+  position: absolute;
+  width: 20%;
+  top: 5%;
+  left: 11%;
+}
+
+.third .main-wrap .windows.middle {
+  position: absolute;
+  width: 20%;
+  top: 16%;
+  left: 15%;
+}
+
+.third .main-wrap .windows.bottom {
+  top: 23%;
+  position: absolute;
+  width: 14%;
+  left: 5%;
+}
+
+.third .main-wrap .windows .window {
+  background-color: currentColor;
+  width: 50%;
+}
+
+.third .secondary-wrap {
+  background-color: #cd901c;
+  width: 60%;
+}
+
+.third .secondary-wrap .divider {
+  background-color: #9f6102;
+  height: 0.5%;
+}
+
+.third .secondary-wrap .divider.top {
+  position: relative;
+  top: 0.9%;
+  height: 0.3%;
+}
+
+.third .secondary-wrap .divider.bottom {
+  position: relative;
+  top: 2%;
+}
+
+.third .secondary-wrap .windows {
+  display: flex;
+  height: 3%;
+  color: #9f6102;
+}
+
+.third .secondary-wrap .windows .window {
+  width: 50%;
+  background-color: currentColor;
+}
+
+.third .secondary-wrap .windows.top {
+  position: relative;
+  top: 3.3%;
+  width: 29%;
+  gap: 27%;
+  height: 2.4%;
+  left: 50%;
+}
+
+.third .secondary-wrap .windows.bottom {
+  position: relative;
+  top: 9%;
+  width: 47%;
+  gap: 13%;
+  left: 10%;
+}
+
+.fourth {
+  color: #ae762d;
+  display: flex;
+  flex-direction: column;
+  height: 31%;
+  width: 13%;
+  margin-left: -11.5%;
+  position: relative;
+  z-index: 1;
+}
+
+.fourth .divider {
+  height: 0.6%;
+  background-color: #7e4405;
+  border-radius: 73%;
+  position: relative;
+  transform: scaleY(1.4);
+}
+
+.fourth .main-wrap {
+  height: 100%;
+  width: 63%;
+  background-color: currentColor;
+}
+
+.fourth .main-wrap .divider:nth-child(1) {
+  width: 100%;
+  top: 12%;
+  transform: rotate(-2deg);
+}
+
+.fourth .main-wrap .divider:nth-child(2) {
+  width: 100%;
+  top: 23%;
+}
+
+.fourth .main-wrap .divider:nth-child(3) {
+  top: 34%;
+  width: 100%;
+  transform: rotate(-2deg);
+}
+
+.fourth .main-wrap .divider:nth-child(4) {
+  top: 47%;
+}
+
+.fourth .main-wrap .divider:nth-child(5) {
+  top: 60%;
+}
+
+.fourth .main-wrap .divider:nth-child(6) {
+  top: 71%;
+  transform: rotate(-1deg);
+}
+
+.fourth .secondary-wrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 25%;
+  width: 100%;
+  background-color: currentColor;
+}
+.fourth .secondary-wrap .divider {
+  height: 2%;
+}
+
+.fourth .secondary-wrap .divider:nth-child(1) {
+  top: 39%;
+}
+
+.fourth .secondary-wrap .divider:nth-child(2) {
+  top: 77%;
+}
+
+.fifth {
+  width: 9%;
+  height: 62%;
+  margin-left: -1.5%;
+  background-color: #9d6619;
+}
+
+.fifth :is(.divider, .window) {
+  background-color: #c37f27;
+  width: 100%;
+  position: relative;
+}
+
+.fifth .divider:nth-child(1) {
+  height: 0.75%;
+  top: 1.9%;
+}
+
+.fifth .divider:nth-child(2) {
+  height: 0.88%;
+  top: 6%;
+}
+
+.fifth .windows {
+  height: 14%;
+  width: 57%;
+  margin: 0 auto;
+  top: 8.5%;
+  display: grid;
+  column-gap: 29%;
+  row-gap: 5%;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.fifth .windows.one {
+  margin-bottom: 17%;
+}
+
+.fifth .windows.one .window:nth-child(1) {
+  clip-path: polygon(6% 0, 100% 0, 100% 96%, 0% 100%);
+}
+
+.fifth .windows.one .window:nth-child(2) {
+  clip-path: polygon(6% 0, 100% 0, 100% 96%, 0% 100%);
+}
+
+.fifth .windows.one .window:nth-child(3) {
+  clip-path: polygon(11% 0, 100% 0, 100% 87%, 0% 100%);
+}
+
+.fifth .windows.one .window:nth-child(4) {
+  clip-path: polygon(2% 0, 100% 0, 100% 100%, 0 93%);
+}
+
+.fifth .windows.two {
+  margin-bottom: 11%;
+}
+
+.fifth .windows.two .window:nth-child(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
+}
+
+.fifth .windows.two .window:nth-child(2) {
+  clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 94%);
+}
+
+.fifth .windows.two .window:nth-child(3) {
+  clip-path: polygon(0 0, 100% 4%, 100% 96%, 0 100%);
+}
+
+.fifth .windows.two .window:nth-child(4) {
+  clip-path: polygon(2% 0, 100% 0, 100% 100%, 0 93%);
+}
+
+.fifth .windows.three {
+  margin-bottom: 19%;
+}
+
+.fifth .windows.four .window:nth-child(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
+}
+
+.fifth .windows.four .window:nth-child(2) {
+  clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 94%);
+}
+
+.fifth .windows.four .window:nth-child(3) {
+  clip-path: polygon(0 0, 100% 4%, 100% 96%, 0 100%);
+}
+
+.fifth .windows.four .window:nth-child(4) {
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 93%);
+}
+
+.sixth {
+  width: 21%;
+  height: 11%;
+  margin-left: -9%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.sixth .roof {
+  height: 29.3%;
+  width: 100%;
+  background: #b3700e;
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.sixth .roof .detail {
+  background-color: #744f1a;
+  height: 30%;
+}
+
+.sixth .roof .detail:nth-child(1) {
+  width: 17%;
+  clip-path: polygon(0 0, 100% 0, 96% 75%, 0% 100%);
+}
+
+.sixth .roof .detail:nth-child(2) {
+  width: 15%;
+  clip-path: polygon(9% 0, 100% 0, 93% 100%, 0% 100%);
+}
+
+.sixth .roof .detail:nth-child(3) {
+  width: 22%;
+  transform: rotate(-2deg);
+  clip-path: polygon(0 5%, 100% 0, 100% 90%, 4% 100%);
+}
+
+.sixth .roof .detail:nth-child(4) {
+  width: 24%;
+  clip-path: polygon(0 0, 94% 0, 100% 90%, 0 100%);
+  transform: rotate(-1deg);
+}
+
+.sixth .roof .detail:nth-child(5) {
+  width: 14%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 99%);
+}
+
+.sixth .divisors {
+  width: 85.4%;
+  flex-grow: 1;
+  background-color: #e1ae34;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.sixth .divisors [class^=divisor] {
+  height: calc(100% + 300px);
+  background-color: #b87c1e;
+  width: 1%;
+  position: relative;
+  border-radius: 50%;
+}
+
+.sixth .divisors .divisor-vert:nth-child(1) {
+  left: 12%;
+}
+
+.sixth .divisors .divisor-vert:nth-child(2) {
+  left: 24%;
+}
+
+.sixth .divisors .divisor-vert:nth-child(3) {
+  left: 36%;
+}
+
+.sixth .divisors .divisor-vert:nth-child(4) {
+  left: 52%;
+}
+
+.sixth .divisors .divisor-vert:nth-child(5) {
+  left: 64%;
+}
+
+.sixth .divisors .divisor-vert:nth-child(6) {
+  left: 74%;
+}
+
+.sixth .divisors .divisor-vert:nth-child(7) {
+  left: 84%;
+}
+
+.sixth .divisors .divisor-hor {
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 85%;
+}
+
+.seventh {
+  width: 9.1%;
+  height: 43.5%;
+  margin-left: -12.2%;
+  display: flex;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
+}
+
+.seventh .main-wrap {
+  width: 48%;
+  background-color: #7f4b19;
+}
+
+.seventh .main-wrap .divisor {
+  width: 100%;
+  background-color: #a37c23;
+  height: 1.1%;
+  position: relative;
+  top: 3.3%;
+  transform: rotate(-1deg);
+}
+
+.seventh .secondary-wrap {
+  width: 52%;
+  background-color: #a37c23;
+  margin-left: -3%;
+  clip-path: polygon(4% 0, 100% 0, 96% 100%, 0 100%);
+}
+
+.seventh .secondary-wrap .divisor {
+  width: 100%;
+  background-color: #7f4b19;
+  height: 1.1%;
+  position: relative;
+  top: 3.3%;
+}
+
+.seventh .secondary-wrap .windows {
+  display: flex;
+  height: 100%;
+  column-gap: 16%;
+  justify-content: center;
+  margin-left: 15%;
+}
+
+.seventh .secondary-wrap .windows :is(.left, .right) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 31%;
+  height: 75%;
+  column-gap: 12.3%;
+  row-gap: 0.3%;
+  margin-top: 35%;
+}
+
+.seventh .secondary-wrap .windows :is(.left, .right) .window:nth-child(1) {
+  border-top-left-radius: 20px;
+}
+
+.seventh .secondary-wrap .windows :is(.left, .right) .window:nth-child(2) {
+  border-top-right-radius: 20px;
+}
+
+.seventh .secondary-wrap .windows .window {
+  background-color: #7f4b19;
+}
